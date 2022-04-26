@@ -11,9 +11,9 @@ export const Container = styled.div`
   background-color: red;
 `;
 
-export const Logo = styled.div`
+export const Logo = styled.img`
   height: 50px;
-  width: 50px;
+  width: 75px;
   background-color: yellow;
 `;
 

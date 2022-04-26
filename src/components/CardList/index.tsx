@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
-import { api } from "../../services/api";
 import { Card } from "../Card";
-import { Container, Title, TitleContainer } from "./styles";
+import { Container, Title, TitleContainer, GridContainer } from "./styles";
 
 interface CharacterInfoCard {
   id: string;
@@ -10,32 +8,27 @@ interface CharacterInfoCard {
   image: string;
   species: string;
 }
+interface CardListProps {
+  characters: CharacterInfoCard[];
+}
 
-export const CardList = () => {
-  const [characters, setCharacters] = useState<CharacterInfoCard[]>(
-    [] as CharacterInfoCard[]
-  );
-
-  useEffect(() => {
-    api.get("character/?page=1").then((response) => {
-      setCharacters(response.data);
-    });
-  }, []);
-
+export const CardList = ({ characters }: CardListProps) => {
   return (
     <Container>
       <TitleContainer>
         <Title>Personagens</Title>
       </TitleContainer>
-      {characters.map((item) => (
-        <Card
-          id={item.id}
-          name={item.name}
-          status={item.status}
-          image={item.image}
-          species={item.species}
-        />
-      ))}
+      <GridContainer>
+        {characters.map((item) => (
+          <Card
+            id={item.id}
+            name={item.name}
+            status={item.status}
+            image={item.image}
+            species={item.species}
+          />
+        ))}
+      </GridContainer>
     </Container>
   );
 };
