@@ -13,7 +13,9 @@ export const TitleContainer = styled.div`
   justify-content: center;
 `;
 
-export const Title = styled.h1``;
+export const Title = styled.h1`
+  color: white;
+`;
 
 export const GridContainer = styled.div`
   width: 100%;

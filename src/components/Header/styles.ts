@@ -8,7 +8,7 @@ export const Container = styled.div`
   padding: 0 3rem;
   width: 100%;
   height: 7rem;
-  background-color: red;
+  background-color: var(--blue);
 `;
 
 export const Logo = styled.img`

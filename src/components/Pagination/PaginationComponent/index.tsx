@@ -21,6 +21,7 @@ export const PaginationComponent: React.FC<PaginationComponentProps> = (
         <PaginationButton
           onClick={() => handlePagination(page - 1)}
           type="button"
+          disabled={page === 1}
         >
           &lt;
         </PaginationButton>
@@ -53,6 +54,7 @@ export const PaginationComponent: React.FC<PaginationComponentProps> = (
         <PaginationButton
           onClick={() => handlePagination(page + 1)}
           type="button"
+          disabled={page === totalPages}
         >
           &gt;
         </PaginationButton>

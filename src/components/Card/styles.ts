@@ -7,24 +7,79 @@ export const Container = styled.div`
   flex-direction: column;
   width: 250px;
   height: 400px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: gray 0px 7px 29px 0px;
   padding: 3rem 0;
   margin: 2rem 0;
   border-radius: 8px;
-  background-color: white;
+  background-color: var(--text-body);
+
+  &:hover {
+    border: 3px solid var(--blue);
+  }
+`;
+
+export const InfoContainer = styled.div`
+  display: flex;
+  width: 100%;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+`;
+
+export const TextContainer = styled.div`
+  display: flex;
+  width: 100%;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
 `;
 
 export const ImageContainer = styled.img`
   width: 100px;
   height: 100px;
-  background-color: red;
 `;
 
 export const Name = styled.h1`
   font-size: 1.5rem;
   text-align: center;
+
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
 `;
 
-export const Species = styled.p``;
+export const Species = styled.p`
+  font-size: 14px;
+  font-weight: normal;
+  color: #000;
+`;
 
-export const Status = styled.p``;
+export const Status = styled.p`
+  font-size: 14px;
+  font-weight: normal;
+  color: #000;
+`;
+
+export const Gender = styled.p`
+  font-size: 14px;
+  font-weight: normal;
+  color: #000;
+`;
+
+export const Origin = styled.p`
+  font-size: 14px;
+  font-weight: normal;
+  color: #000;
+`;

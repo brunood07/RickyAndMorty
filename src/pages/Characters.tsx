@@ -10,7 +10,13 @@ export function Characters() {
   const { characters, fetchCharacters, totalPages } = useCharacters();
   const [page, setPage] = useState(1);
   console.log(characters);
-  const handlePages = (updatePage: number) => setPage(updatePage);
+  const handlePages = (updatePage: number) => {
+    if (updatePage <= 0) {
+      setPage(1);
+    }
+
+    setPage(updatePage);
+  };
 
   console.log(characters);
 
