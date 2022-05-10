@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { CardList } from "../components/CardList";
-import { Header } from "../components/Header";
-import { Pagination } from "../components/Pagination";
-import useCharacters from "../hooks/useCharacters";
+import { CardList } from "../../components/CardList";
+import { Header } from "../../components/Header";
+import { Pagination } from "../../components/Pagination";
+import useCharacters from "../../hooks/useCharacters";
 
-import { GlobalStyle } from "../styles/global";
+import { GlobalStyle } from "../../styles/global";
 
 export function Characters() {
   const { characters, fetchCharacters, totalPages } = useCharacters();
@@ -35,7 +35,6 @@ export function Characters() {
           handlePages={handlePages}
         />
       </div>
-      <GlobalStyle />
     </div>
   );
 }

@@ -47,8 +47,10 @@ export const TextContainer = styled.div`
 `;
 
 export const ImageContainer = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
+  border-radius: 10px;
+  margin-bottom: 5px;
 `;
 
 export const Name = styled.h1`

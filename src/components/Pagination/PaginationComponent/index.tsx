@@ -29,21 +29,29 @@ export const PaginationComponent: React.FC<PaginationComponentProps> = (
           {1}
         </PaginationButton>
         <PaginationDivider>...</PaginationDivider>
-        {/* <PaginationButton
-          onClick={() => handlePagination(page - 1)}
+        {page > 1 && (
+          <PaginationButton
+            onClick={() => handlePagination(page - 1)}
+            type="button"
+          >
+            {page - 1}
+          </PaginationButton>
+        )}
+        <PaginationButton
+          onClick={() => handlePagination(page)}
           type="button"
+          style={{ backgroundColor: "#6933ff" }}
         >
-          {page - 1 }
-        </PaginationButton> */}
-        <PaginationButton onClick={() => handlePagination(page)} type="button">
           {page}
         </PaginationButton>
-        <PaginationButton
-          onClick={() => handlePagination(page + 1)}
-          type="button"
-        >
-          {page + 1}
-        </PaginationButton>
+        {page < 42 && (
+          <PaginationButton
+            onClick={() => handlePagination(page + 1)}
+            type="button"
+          >
+            {page + 1}
+          </PaginationButton>
+        )}
         <PaginationDivider>...</PaginationDivider>
         <PaginationButton
           onClick={() => handlePagination(totalPages)}

@@ -12,9 +12,9 @@ export const Container = styled.div`
 `;
 
 export const Logo = styled.img`
-  height: 50px;
-  width: 75px;
-  background-color: yellow;
+  height: 70px;
+  width: 200px;
+  background-color: transparent;
 `;
 
 export const NavBar = styled.nav`

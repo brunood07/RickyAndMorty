@@ -1,5 +1,5 @@
-import { Container, Logo, NavBar } from "./styles";
-
+import { NavBar } from "./NavBar";
+import { Container, Logo } from "./styles";
 // import LogoIMG from "../../assets/logo.png";
 
 export const Header = () => {
