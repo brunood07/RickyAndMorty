@@ -1,17 +1,24 @@
-import { PaginationItem } from "../PaginationItem";
-import { Container } from "./styles";
+import usePagination from "../../hooks/usePagination";
+import { Container, PaginationItem } from "./styles";
 
-interface PaginationProps {
-  numberOfPages: number;
-  onClick: () => void;
-}
+export const Pagination = () => {
+  const { setActualPage } = usePagination();
+  console.log("renderizei");
 
-export const Pagination = ({ numberOfPages, onClick }: PaginationProps) => {
   return (
     <Container>
-      {Array(numberOfPages).map((item, index) => (
-        <PaginationItem pageNumber={index} onClick={onClick} />
-      ))}
+      {Array(42)
+        .fill(null)
+        .map((_, index) => {
+          return (
+            <PaginationItem
+              key={index}
+              onClick={() => setActualPage(index + 1)}
+            >
+              {index + 1}
+            </PaginationItem>
+          );
+        })}
     </Container>
   );
 };

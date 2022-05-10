@@ -1,20 +1,14 @@
 import { Container, ImageContainer, Name, Species, Status } from "./styles";
 
-interface CharacterInfoCard {
-  id: string;
+interface CharacterData {
+  id: number;
   name: string;
-  status: string;
-  image: string;
+  status: "Alive" | "Dead" | "unknown";
   species: string;
+  image: string;
 }
 
-export const Card = ({
-  id,
-  name,
-  status,
-  image,
-  species,
-}: CharacterInfoCard) => {
+export const Card = ({ id, name, status, image, species }: CharacterData) => {
   return (
     <Container>
       <ImageContainer src={image} />

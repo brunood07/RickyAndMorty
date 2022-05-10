@@ -18,5 +18,5 @@ export const Title = styled.h1``;
 export const GridContainer = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
 `;

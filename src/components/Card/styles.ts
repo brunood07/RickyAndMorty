@@ -11,6 +11,7 @@ export const Container = styled.div`
   padding: 3rem 0;
   margin: 2rem 0;
   border-radius: 8px;
+  background-color: white;
 `;
 
 export const ImageContainer = styled.img`

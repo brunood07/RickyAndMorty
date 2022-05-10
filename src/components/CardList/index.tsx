@@ -1,15 +1,15 @@
 import { Card } from "../Card";
 import { Container, Title, TitleContainer, GridContainer } from "./styles";
 
-interface CharacterInfoCard {
-  id: string;
+interface CharacterData {
+  id: number;
   name: string;
-  status: string;
-  image: string;
+  status: "Alive" | "Dead" | "unknown";
   species: string;
+  image: string;
 }
 interface CardListProps {
-  characters: CharacterInfoCard[];
+  characters: CharacterData[];
 }
 
 export const CardList = ({ characters }: CardListProps) => {
