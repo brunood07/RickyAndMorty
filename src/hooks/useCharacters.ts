@@ -13,12 +13,14 @@ export default function useCharacters() {
   const [characters, setCharacters] = useState<CharacterData[]>(
     [] as CharacterData[]
   );
+  const [totalPages, setTotalPages] = useState(0);
 
   function fetchCharacters(page: number) {
-    api
-      .get(`/character/?page=${page}`)
-      .then((response) => setCharacters(response.data.results));
+    api.get(`/character/?page=${page}`).then((response) => {
+      setCharacters(response.data.results);
+      setTotalPages(response.data.info.pages);
+    });
   }
 
-  return { characters, setCharacters, fetchCharacters };
+  return { characters, setCharacters, fetchCharacters, totalPages };
 }

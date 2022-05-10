@@ -1,24 +1,25 @@
-import usePagination from "../../hooks/usePagination";
-import { Container, PaginationItem } from "./styles";
+import { useEffect, useState } from "react";
+import { PaginationComponent } from "./PaginationComponent";
+import useCharacters from "../../hooks/useCharacters";
 
-export const Pagination = () => {
-  const { setActualPage } = usePagination();
-  console.log("renderizei");
+interface PaginationProps {
+  page: number;
+  totalPages: number;
+  handlePages: (updatePage: number) => void;
+}
 
+export const Pagination = ({
+  page,
+  totalPages,
+  handlePages,
+}: PaginationProps) => {
   return (
-    <Container>
-      {Array(42)
-        .fill(null)
-        .map((_, index) => {
-          return (
-            <PaginationItem
-              key={index}
-              onClick={() => setActualPage(index + 1)}
-            >
-              {index + 1}
-            </PaginationItem>
-          );
-        })}
-    </Container>
+    <div className="container">
+      <PaginationComponent
+        page={page}
+        totalPages={totalPages}
+        handlePagination={handlePages}
+      />
+    </div>
   );
 };
