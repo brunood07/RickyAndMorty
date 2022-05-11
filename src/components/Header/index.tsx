@@ -1,11 +1,19 @@
+import { useNavigate } from "react-router-dom";
+
 import { NavBar } from "./NavBar";
+
 import { Container, Logo } from "./styles";
-// import LogoIMG from "../../assets/logo.png";
 
 export const Header = () => {
+  const navigate = useNavigate();
+
+  const handleLogoClick = () => {
+    navigate("/");
+  };
+
   return (
     <Container>
-      <Logo src="logo.png" />
+      <Logo src="logo.png" onClick={handleLogoClick} />
       <NavBar />
     </Container>
   );

@@ -5,18 +5,31 @@ export const Container = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 3rem;
+  padding-left: 1.5rem;
   width: 100%;
   height: 7rem;
   background-color: var(--blue);
 
   box-shadow: gray 0px 0.5px 9px 0px;
+
+  @media screen and (max-width: 375px) {
+    width: 100%;
+    height: 5rem;
+  }
 `;
 
 export const Logo = styled.img`
-  height: 70px;
   width: 200px;
+  height: 70px;
+
   background-color: transparent;
+
+  cursor: pointer;
+
+  @media screen and (max-width: 375px) {
+    width: 100px;
+    height: 35px;
+  }
 `;
 
 export const NavBar = styled.nav`
