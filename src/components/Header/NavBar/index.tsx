@@ -29,7 +29,7 @@ export const NavBar = () => {
             <a href="/characters">Characters</a>
           </li>
           <li>
-            <a href="/epsodes">Epsodes</a>
+            <a href="/episodes">Episodes</a>
           </li>
         </ul>
       </NavigationMenu>
