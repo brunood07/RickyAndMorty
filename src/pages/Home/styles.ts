@@ -17,6 +17,10 @@ export const HomeContainer = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
+
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+  }
 `;
 
 export const HomeImageContainer = styled.div`
@@ -25,13 +29,26 @@ export const HomeImageContainer = styled.div`
   justify-content: center;
   width: 50vw;
   height: 100vh;
-  /* background-color: green; */
+
+  @media screen and (max-width: 375px) {
+    width: 100%;
+    height: 100%;
+
+    padding: 0 2rem;
+
+    margin-top: 1rem;
+  }
 `;
 
 export const HomeImage = styled.img`
   width: 20vw;
   height: 80vh;
   border-radius: 4px;
+
+  @media screen and (max-width: 375px) {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export const HomeInfoContainer = styled.div`
@@ -45,6 +62,15 @@ export const HomeInfoContainer = styled.div`
   height: 100vh;
 
   padding: 0 10rem;
+
+  @media screen and (max-width: 375px) {
+    width: 100%;
+    height: 100%;
+
+    padding: 2rem 2rem;
+
+    margin-top: 1rem;
+  }
 `;
 
 export const HomeInfoTitle = styled.p`
@@ -74,6 +100,15 @@ export const CTAButtonContainer = styled.div`
   margin-top: 3rem;
 
   width: 100%;
+
+  @media screen and (max-width: 375px) {
+    width: 100%;
+    height: 100%;
+
+    flex-direction: column;
+
+    margin-top: 1rem;
+  }
 `;
 
 export const CTAButton = styled.div`
@@ -94,7 +129,16 @@ export const CTAButton = styled.div`
 
   transition: all 0.3s;
 
+  cursor: pointer;
+
   &:hover {
     opacity: 0.7;
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 100%;
+    padding: 0 2rem;
+
+    margin-top: 1rem;
   }
 `;

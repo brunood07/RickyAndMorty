@@ -3,6 +3,7 @@ import { CardList } from "../../components/CardList";
 import { Header } from "../../components/Header";
 import { Pagination } from "../../components/Pagination";
 import useCharacters from "../../hooks/useCharacters";
+import { ContentContainer } from "./styles";
 
 export function Characters() {
   const { characters, fetchCharacters, totalPages } = useCharacters();
@@ -26,14 +27,14 @@ export function Characters() {
   return (
     <div>
       <Header />
-      <div>
+      <ContentContainer>
         <CardList characters={characters} />
         <Pagination
           page={page}
           totalPages={totalPages}
           handlePages={handlePages}
         />
-      </div>
+      </ContentContainer>
     </div>
   );
 }
