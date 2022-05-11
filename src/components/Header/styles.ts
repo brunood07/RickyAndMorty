@@ -9,6 +9,8 @@ export const Container = styled.div`
   width: 100%;
   height: 7rem;
   background-color: var(--blue);
+
+  box-shadow: gray 0px 0.5px 9px 0px;
 `;
 
 export const Logo = styled.img`

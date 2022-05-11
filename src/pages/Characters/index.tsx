@@ -4,8 +4,6 @@ import { Header } from "../../components/Header";
 import { Pagination } from "../../components/Pagination";
 import useCharacters from "../../hooks/useCharacters";
 
-import { GlobalStyle } from "../../styles/global";
-
 export function Characters() {
   const { characters, fetchCharacters, totalPages } = useCharacters();
   const [page, setPage] = useState(1);
@@ -16,6 +14,7 @@ export function Characters() {
     }
 
     setPage(updatePage);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   console.log(characters);

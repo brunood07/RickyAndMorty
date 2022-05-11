@@ -77,8 +77,8 @@ export const CTAButtonContainer = styled.div`
 `;
 
 export const CTAButton = styled.div`
-  width: 200px;
-  height: 30px;
+  width: 250px;
+  height: 35px;
 
   display: flex;
   align-items: center;
