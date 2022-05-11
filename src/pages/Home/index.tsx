@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { Header } from "../../components/Header";
 
 import {
@@ -15,6 +16,16 @@ import {
 } from "./styles";
 
 export function Home() {
+  const navigate = useNavigate();
+
+  const handleCharacters = () => {
+    navigate("/characters");
+  };
+
+  const handleEpisodes = () => {
+    navigate("/episodes");
+  };
+
   return (
     <Container>
       <Header />
@@ -42,8 +53,8 @@ export function Home() {
           <CTAText>Want to know more about this universe?</CTAText>
           <CTAText>Explore through our pages!</CTAText>
           <CTAButtonContainer>
-            <CTAButton>Characters</CTAButton>
-            <CTAButton>Episodes</CTAButton>
+            <CTAButton onClick={handleCharacters}>Characters</CTAButton>
+            <CTAButton onClick={handleEpisodes}>Episodes</CTAButton>
           </CTAButtonContainer>
         </HomeInfoContainer>
       </HomeContainer>
