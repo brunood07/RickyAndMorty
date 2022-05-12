@@ -46,6 +46,11 @@ export const HomeImage = styled.img`
   border-radius: 4px;
 
   @media screen and (max-width: 375px) {
+    width: 30vw;
+    height: 80vh;
+  }
+
+  @media screen and (max-width: 375px) {
     width: 100%;
     height: 100%;
   }
@@ -76,18 +81,18 @@ export const HomeInfoContainer = styled.div`
 export const HomeInfoTitle = styled.p`
   font-size: 38px;
   font-weight: bold;
-  color: #20bf55;
+  color: var(--text);
 `;
 
 export const HomeInfoText = styled.p`
   font-size: 18px;
-  color: #20bf55;
+  color: var(--text);
   text-align: center;
   margin: 2rem 0;
 `;
 
 export const CTAText = styled.p`
-  color: #20bf55;
+  color: var(--text);
 `;
 
 export const CTAButtonContainer = styled.div`
@@ -120,7 +125,7 @@ export const CTAButton = styled.div`
   justify-content: center;
 
   background-color: var(--blue);
-  color: #20bf55;
+  color: #fff;
 
   border-radius: 8px;
   border: 0;

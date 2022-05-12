@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { api } from "../services/api";
 
-interface CharacterData {
+export interface CharacterData {
   id: number;
   name: string;
   status: "Alive" | "Dead" | "unknown";

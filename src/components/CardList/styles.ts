@@ -23,7 +23,7 @@ export const TitleContainer = styled.div`
 `;
 
 export const Title = styled.h1`
-  color: #20bf55;
+  color: var(--text);
 `;
 
 export const GridContainer = styled.div`

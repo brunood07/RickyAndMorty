@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     
     --text-title: #363f5f;
     --text-body: #969cb3;
+    --text: #20bf55;
     
     --background: #1e1e1e;
     --shape: #ffffff
@@ -19,6 +20,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Roboto, sans-serif;
   }
 
   html {
@@ -33,6 +35,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background: var(--background);
     -webkit-font-smoothing: antialiased;
+    
   }
 
   body, input, textarea, button {

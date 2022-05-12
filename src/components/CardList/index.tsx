@@ -19,7 +19,7 @@ export const CardList = ({ characters }: CardListProps) => {
   return (
     <Container>
       <TitleContainer>
-        <Title>Personagens</Title>
+        <Title>Characters</Title>
       </TitleContainer>
       <GridContainer>
         {characters.map((item) => (

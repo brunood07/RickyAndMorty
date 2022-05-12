@@ -5,7 +5,7 @@ export const Container = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-left: 1.5rem;
+  padding: 0 3rem;
   width: 100%;
   height: 7rem;
   background-color: var(--blue);
@@ -15,6 +15,9 @@ export const Container = styled.div`
   @media screen and (max-width: 375px) {
     width: 100%;
     height: 5rem;
+
+    padding: 0;
+    padding-left: 1.5rem;
   }
 `;
 
