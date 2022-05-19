@@ -1,4 +1,4 @@
-import { Card } from "../Card";
+import { Card } from "./Card";
 import { Container, Title, TitleContainer, GridContainer } from "./styles";
 
 interface CharacterData {
@@ -11,11 +11,12 @@ interface CharacterData {
   location: { name: string; url: string };
   image: string;
 }
+
 interface CardListProps {
   characters: CharacterData[];
 }
 
-export const CardList = ({ characters }: CardListProps) => {
+export const CharactersList = ({ characters }: CardListProps) => {
   return (
     <Container>
       <TitleContainer>

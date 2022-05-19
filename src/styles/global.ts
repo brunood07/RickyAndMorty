@@ -35,7 +35,9 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background: var(--background);
     -webkit-font-smoothing: antialiased;
-    
+
+    font-family: Roboto, sans-serif;
+
   }
 
   body, input, textarea, button {

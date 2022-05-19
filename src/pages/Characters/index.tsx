@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { CardList } from "../../components/CardList";
+import { CharactersList } from "../../components/CharactersList";
 import { Header } from "../../components/Header";
 import { Pagination } from "../../components/Pagination";
 import useCharacters from "../../hooks/useCharacters";
@@ -28,7 +28,7 @@ export function Characters() {
     <div>
       <Header />
       <ContentContainer>
-        <CardList characters={characters} />
+        <CharactersList characters={characters} />
         <Pagination
           page={page}
           totalPages={totalPages}
