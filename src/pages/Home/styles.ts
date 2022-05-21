@@ -47,6 +47,15 @@ export const HomeImageContainer = styled.div`
     margin-top: 1rem;
   }
 
+  @media screen and (max-width: 425px) {
+    width: 100%;
+    height: 100%;
+
+    padding: 0 2rem;
+
+    margin-top: 1rem;
+  }
+
   @media screen and (max-width: 768px) {
     width: 100%;
     height: 100%;
@@ -68,9 +77,9 @@ export const HomeImage = styled.img`
     height: 80vh;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 425px) {
     width: 100%;
-    height: 100%;
+    height: 50px;
   }
 
   @media screen and (max-width: 768px) {
@@ -112,7 +121,7 @@ export const HomeInfoContainer = styled.div`
     width: 100%;
     height: 100%;
 
-    padding: 2rem 8rem;
+    padding: 2rem 4rem;
 
     margin-top: 1rem;
   }
@@ -152,6 +161,15 @@ export const CTAButtonContainer = styled.div`
     height: 100%;
 
     flex-direction: column;
+
+    margin-top: 1rem;
+  }
+
+  @media screen and (max-width: 425px) {
+    width: 100%;
+    height: 100%;
+
+    flex-direction: row;
 
     margin-top: 1rem;
   }

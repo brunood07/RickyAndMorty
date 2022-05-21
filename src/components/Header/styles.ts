@@ -36,6 +36,11 @@ export const Logo = styled.img`
     width: 100px;
     height: 35px;
   }
+
+  @media screen and (max-width: 768px) {
+    width: 150px;
+    height: 50px;
+  }
 `;
 
 export const NavBar = styled.nav`

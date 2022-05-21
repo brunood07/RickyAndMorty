@@ -57,13 +57,13 @@ export const NavigationMenu = styled.div<Props>`
     z-index: 10;
 
     ul {
-      position: absolute;
-      top: 81px;
-      left: 127px;
+      position: fixed;
+      top: 105px;
+      left: 0;
 
       flex-direction: column;
 
-      width: 400px;
+      width: 100%;
       height: 900px;
 
       list-style: none;
