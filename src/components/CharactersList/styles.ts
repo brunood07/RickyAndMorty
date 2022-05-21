@@ -38,4 +38,11 @@ export const GridContainer = styled.div`
     align-items: center;
     justify-content: center;
   }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+
+    align-items: center;
+    justify-content: center;
+  }
 `;

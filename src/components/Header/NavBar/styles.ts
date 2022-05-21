@@ -22,8 +22,6 @@ export const NavigationMenu = styled.div<Props>`
 
   ul {
     display: flex;
-
-    padding: 0;
   }
 
   li {
@@ -60,15 +58,15 @@ export const NavigationMenu = styled.div<Props>`
 
     ul {
       position: absolute;
-      top: 65px;
-      left: 0;
+      top: 81px;
+      left: 127px;
 
       flex-direction: column;
 
-      width: 100%;
-      height: 100vh;
+      width: 400px;
+      height: 900px;
 
-      list-style: nonew;
+      list-style: none;
 
       background-color: var(--blue);
 
@@ -83,6 +81,7 @@ export const NavigationMenu = styled.div<Props>`
     li a {
       width: 100%;
 
+      text-decoration: none;
       color: black;
 
       padding: 1.5rem 0;
@@ -138,5 +137,3 @@ export const Divider = styled.hr`
     display: block;
   }
 `;
-
-//https://blog.logrocket.com/create-responsive-navbar-react-css/

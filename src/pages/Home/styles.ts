@@ -21,7 +21,11 @@ export const HomeContainer = styled.div`
 
   width: 100%;
 
-  @media (max-width: 375px) {
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 768px) {
     flex-direction: column;
   }
 `;
@@ -34,11 +38,20 @@ export const HomeImageContainer = styled.div`
   width: 50vw;
   height: 100vh;
 
-  @media (max-width: 375px) {
+  @media screen and (max-width: 375px) {
     width: 100%;
     height: 100%;
 
     padding: 0 2rem;
+
+    margin-top: 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
 
     margin-top: 1rem;
   }
@@ -50,17 +63,22 @@ export const HomeImage = styled.img`
 
   border-radius: 4px;
 
-  @media (max-width: 375px) {
+  @media screen and (max-width: 375px) {
     width: 30vw;
     height: 80vh;
   }
 
-  @media (max-width: 375px) {
+  @media screen and (max-width: 375px) {
     width: 100%;
     height: 100%;
   }
 
-  @media (max-width: 1440px) {
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 1440px) {
     width: 70%;
     height: 80%;
 
@@ -81,11 +99,20 @@ export const HomeInfoContainer = styled.div`
 
   padding: 0 10rem;
 
-  @media (max-width: 375px) {
+  @media screen and (max-width: 375px) {
     width: 100%;
     height: 100%;
 
     padding: 2rem 2rem;
+
+    margin-top: 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+
+    padding: 2rem 8rem;
 
     margin-top: 1rem;
   }
@@ -104,15 +131,6 @@ export const HomeInfoText = styled.p`
   text-align: center;
 
   margin: 2rem 0;
-
-  @media (max-width: 375px) {
-    width: 100%;
-    height: 100%;
-
-    padding: 0;
-
-    margin-top: 1rem;
-  }
 `;
 
 export const CTAText = styled.p`
@@ -129,7 +147,16 @@ export const CTAButtonContainer = styled.div`
 
   margin-top: 3rem;
 
-  @media (max-width: 375px) {
+  @media screen and (max-width: 375px) {
+    width: 100%;
+    height: 100%;
+
+    flex-direction: column;
+
+    margin-top: 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
     width: 100%;
     height: 100%;
 
@@ -163,7 +190,15 @@ export const CTAButton = styled.div`
     opacity: 0.7;
   }
 
-  @media (max-width: 375px) {
+  @media screen and (max-width: 375px) {
+    width: 100%;
+
+    padding: 0 2rem;
+
+    margin-top: 1rem;
+  }
+
+  @media screen and (max-width: 768px) {
     width: 100%;
 
     padding: 0 2rem;

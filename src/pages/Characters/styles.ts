@@ -12,4 +12,10 @@ export const ContentContainer = styled.div`
 
     width: 100%;
   }
+
+  @media screen and (max-width: 768px) {
+    align-items: center;
+
+    width: 100%;
+  }
 `;
