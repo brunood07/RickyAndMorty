@@ -7,7 +7,6 @@ import {
   HomeImageContainer,
   HomeImage,
   HomeInfoContainer,
-  // Title,
   HomeInfoText,
   HomeInfoTitle,
   CTAText,
@@ -29,8 +28,6 @@ export function Home() {
   return (
     <Container>
       <Header />
-
-      {/* <Title>Welcome</Title> */}
 
       <HomeContainer>
         <HomeImageContainer>

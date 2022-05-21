@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
 import { PaginationComponent } from "./PaginationComponent";
-import useCharacters from "../../hooks/useCharacters";
 
 interface PaginationProps {
   page: number;

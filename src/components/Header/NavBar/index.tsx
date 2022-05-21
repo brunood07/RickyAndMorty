@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { HamburguerButton, Nav, NavigationMenu } from "./styles";
+import { Divider, HamburguerButton, Nav, NavigationMenu } from "./styles";
 
 export const NavBar = () => {
-  const [isNavExpanded, setIsNavExpanded] = useState(true);
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
     <Nav>
@@ -25,12 +25,15 @@ export const NavBar = () => {
           <li>
             <a href="/">Home</a>
           </li>
+          <Divider />
           <li>
             <a href="/characters">Characters</a>
           </li>
+          <Divider />
           <li>
             <a href="/episodes">Episodes</a>
           </li>
+          <Divider />
         </ul>
       </NavigationMenu>
     </Nav>

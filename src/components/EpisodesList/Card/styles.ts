@@ -22,8 +22,8 @@ export const Container = styled.div`
     border: 3px solid var(--blue);
   }
 
-  @media screen and (max-width: 375px) {
-    width: 250px;
+  @media screen and (max-width: 360px) {
+    width: 200px;
     height: 200px;
 
     box-shadow: none;
@@ -53,16 +53,12 @@ export const Container = styled.div`
     width: 300px;
     height: 200px;
 
-    box-shadow: none;
-
     text-align: center;
   }
 
   @media screen and (max-width: 1441px) {
     width: 300px;
     height: 200px;
-
-    box-shadow: none;
 
     text-align: center;
   }
@@ -73,24 +69,44 @@ export const Title = styled.p`
   font-weight: bold;
 
   color: var(--background);
+
+  @media screen and (max-width: 360px) {
+    font-size: 14px;
+  }
 `;
 
 export const EpisodeName = styled.p`
   font-size: 16px;
   color: var(--background);
+
+  @media screen and (max-width: 360px) {
+    font-size: 14px;
+  }
 `;
 
 export const EpisodeAirDate = styled.p`
   font-size: 16px;
   color: var(--background);
+
+  @media screen and (max-width: 360px) {
+    font-size: 14px;
+  }
 `;
 
 export const EpisodeCreated = styled.p`
   font-size: 16px;
   color: var(--background);
+
+  @media screen and (max-width: 360px) {
+    font-size: 14px;
+  }
 `;
 
 export const EpisodeCharacters = styled.p`
   font-size: 16px;
   color: var(--background);
+
+  @media screen and (max-width: 360px) {
+    font-size: 14px;
+  }
 `;

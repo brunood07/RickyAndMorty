@@ -54,44 +54,41 @@ export const NavigationMenu = styled.div<Props>`
   }
 
   @media screen and (max-width: 768px) {
-    display: none;
-  }
+    display: ${({ expanded }) => (expanded ? "block" : "none")};
 
-  expanded && {
-    @media screen and (max-width: 768px) {
-      display: block;
+    z-index: 10;
 
-      ul {
-        position: absolute;
-        top: 60px;
-        left: 0;
+    ul {
+      position: absolute;
+      top: 65px;
+      left: 0;
 
-        flex-direction: column;
+      flex-direction: column;
 
-        width: 100%;
-        height: calc(100vh - 77px);
+      width: 100%;
+      height: 100vh;
 
-        background-color: white;
+      background-color: var(--blue);
 
-        border-top: 1px solid black;
-      }
+      border: 1px solid black;
+    }
 
-      li {
-        text-align: center;
-        margin: 0;
-      }
+    li {
+      text-align: center;
+      margin: 0;
+    }
 
-      li a {
-        width: 100%;
+    li a {
+      width: 100%;
 
-        color: black;
+      color: black;
 
-        padding: 1.5rem 0;
-      }
+      padding: 1.5rem 0;
+    }
 
-      li:hover {
-        background-color: #eee;
-      }
+    li:hover {
+      background-color: var(--blue);
+      text-decoration: none;
     }
   }
 `;
@@ -125,6 +122,13 @@ export const HamburguerButton = styled.button`
   @media screen and (max-width: 768px) {
     display: block;
   }
+`;
+
+export const Divider = styled.hr`
+  width: 100%;
+  height: 1px;
+
+  border: 0.5px solid var(--background);
 `;
 
 //https://blog.logrocket.com/create-responsive-navbar-react-css/

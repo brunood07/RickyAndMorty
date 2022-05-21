@@ -59,6 +59,15 @@ export const HomeImage = styled.img`
     width: 100%;
     height: 100%;
   }
+
+  @media screen and (max-width: 1440px) {
+    width: 70%;
+    height: 80%;
+
+    padding: 2rem 2rem;
+
+    margin-top: 1rem;
+  }
 `;
 
 export const HomeInfoContainer = styled.div`
