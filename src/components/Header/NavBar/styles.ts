@@ -68,6 +68,8 @@ export const NavigationMenu = styled.div<Props>`
       width: 100%;
       height: 100vh;
 
+      list-style: nonew;
+
       background-color: var(--blue);
 
       border: 1px solid black;
@@ -125,10 +127,16 @@ export const HamburguerButton = styled.button`
 `;
 
 export const Divider = styled.hr`
+  display: none;
+
   width: 100%;
   height: 1px;
 
   border: 0.5px solid var(--background);
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
 `;
 
 //https://blog.logrocket.com/create-responsive-navbar-react-css/
