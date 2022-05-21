@@ -8,8 +8,8 @@ export const ContentContainer = styled.div`
   width: 100%;
 
   @media screen and (max-width: 375px) {
-    width: 100%;
-
     align-items: center;
+
+    width: 100%;
   }
 `;

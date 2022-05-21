@@ -5,12 +5,17 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+
   width: 250px;
   height: 400px;
+
   box-shadow: gray 0px 7px 15px 0px;
+
   padding: 3rem 0;
   margin: 2rem 0;
+
   border-radius: 8px;
+
   background-color: var(--text-body);
 
   &:hover {
@@ -20,12 +25,13 @@ export const Container = styled.div`
 
 export const InfoContainer = styled.div`
   display: flex;
-  width: 100%;
-
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+
   text-align: center;
+
+  width: 100%;
 
   font-size: 14px;
   font-weight: bold;
@@ -34,12 +40,13 @@ export const InfoContainer = styled.div`
 
 export const TextContainer = styled.div`
   display: flex;
-  width: 100%;
-
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
   text-align: center;
+
+  width: 100%;
 
   font-size: 14px;
   font-weight: bold;
@@ -49,12 +56,13 @@ export const TextContainer = styled.div`
 export const ImageContainer = styled.img`
   width: 125px;
   height: 125px;
+
   border-radius: 10px;
+
   margin-bottom: 5px;
 `;
 
 export const Name = styled.h1`
-  font-size: 1.5rem;
   text-align: center;
 
   font-size: 14px;

@@ -5,7 +5,6 @@ export const Container = styled.div``;
 export const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
-
   align-items: center;
   justify-content: center;
 `;
@@ -28,7 +27,7 @@ export const PageTitle = styled.h1`
 export const SeasonTitle = styled.p`
   font-size: 24px;
   font-weight: bold;
-  color: white;
+  color: var(--green);
 
   margin-bottom: 1rem;
 `;

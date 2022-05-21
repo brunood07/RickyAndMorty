@@ -3,19 +3,22 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
   align-items: center;
   justify-content: center;
+
+  width: 100%;
 `;
 
 export const Title = styled.h1`
-  color: white;
   margin: 3rem 0;
+
+  color: white;
 `;
 
 export const HomeContainer = styled.div`
   display: flex;
   flex-direction: row;
+
   width: 100%;
 
   @media screen and (max-width: 375px) {
@@ -27,6 +30,7 @@ export const HomeImageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 50vw;
   height: 100vh;
 
@@ -43,6 +47,7 @@ export const HomeImageContainer = styled.div`
 export const HomeImage = styled.img`
   width: 20vw;
   height: 80vh;
+
   border-radius: 4px;
 
   @media screen and (max-width: 375px) {
@@ -59,7 +64,6 @@ export const HomeImage = styled.img`
 export const HomeInfoContainer = styled.div`
   display: flex;
   flex-direction: column;
-
   align-items: center;
   justify-content: center;
 
@@ -87,7 +91,9 @@ export const HomeInfoTitle = styled.p`
 export const HomeInfoText = styled.p`
   font-size: 18px;
   color: var(--text);
+
   text-align: center;
+
   margin: 2rem 0;
 `;
 
@@ -98,13 +104,12 @@ export const CTAText = styled.p`
 export const CTAButtonContainer = styled.div`
   display: flex;
   flex-direction: row;
-
   align-items: center;
   justify-content: center;
 
-  margin-top: 3rem;
-
   width: 100%;
+
+  margin-top: 3rem;
 
   @media screen and (max-width: 375px) {
     width: 100%;
@@ -117,12 +122,12 @@ export const CTAButtonContainer = styled.div`
 `;
 
 export const CTAButton = styled.div`
-  width: 250px;
-  height: 35px;
-
   display: flex;
   align-items: center;
   justify-content: center;
+
+  width: 250px;
+  height: 35px;
 
   background-color: var(--blue);
   color: #fff;
@@ -142,6 +147,7 @@ export const CTAButton = styled.div`
 
   @media screen and (max-width: 375px) {
     width: 100%;
+
     padding: 0 2rem;
 
     margin-top: 1rem;
