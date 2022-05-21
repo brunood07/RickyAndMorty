@@ -31,36 +31,22 @@ export const Container = styled.div`
     text-align: center;
   }
 
-  @media screen and (max-width: 480px) {
-    width: 300px;
-    height: 200px;
-
-    box-shadow: none;
-
-    text-align: center;
-  }
-
-  @media screen and (max-width: 600px) {
-    width: 400px;
-    height: 200px;
-
-    box-shadow: none;
-
-    text-align: center;
-  }
-
   @media screen and (max-width: 1024px) {
-    width: 300px;
+    width: 250px;
     height: 200px;
 
     text-align: center;
+
+    box-shadow: gray 0px 7px 15px 0px;
   }
 
-  @media screen and (max-width: 1441px) {
+  @media screen and (max-width: 1440px) {
     width: 300px;
     height: 200px;
 
     text-align: center;
+
+    box-shadow: gray 0px 7px 15px 0px;
   }
 `;
 
