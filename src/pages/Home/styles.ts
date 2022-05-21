@@ -104,6 +104,15 @@ export const HomeInfoText = styled.p`
   text-align: center;
 
   margin: 2rem 0;
+
+  @media (max-width: 375px) {
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+
+    margin-top: 1rem;
+  }
 `;
 
 export const CTAText = styled.p`
