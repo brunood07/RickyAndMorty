@@ -58,7 +58,7 @@ export const NavigationMenu = styled.div<Props>`
 
     ul {
       position: fixed;
-      top: 105px;
+      top: 100px;
       left: 0;
 
       flex-direction: column;

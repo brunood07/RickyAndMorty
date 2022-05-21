@@ -60,7 +60,7 @@ export function CustomSlider(props: SeasonEpisodes) {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 2,
+          initialSlide: 1,
           infinite: true,
           dots: false,
         },
@@ -70,6 +70,7 @@ export function CustomSlider(props: SeasonEpisodes) {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          initialSlide: 1,
           infinite: false,
           dots: false,
         },

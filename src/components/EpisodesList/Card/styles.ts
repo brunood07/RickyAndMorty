@@ -32,7 +32,7 @@ export const Container = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    width: 315px;
+    width: 300px;
     height: 200px;
 
     box-shadow: none;
