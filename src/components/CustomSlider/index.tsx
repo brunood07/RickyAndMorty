@@ -21,7 +21,7 @@ export function CustomSlider(props: SeasonEpisodes) {
   const { episodes } = props;
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 5,
@@ -34,7 +34,7 @@ export function CustomSlider(props: SeasonEpisodes) {
           slidesToShow: 4,
           slidesToScroll: 4,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -43,7 +43,7 @@ export function CustomSlider(props: SeasonEpisodes) {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true,
+          dots: false,
         },
       },
       {
@@ -52,6 +52,8 @@ export function CustomSlider(props: SeasonEpisodes) {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 2,
+          infinite: true,
+          dots: false,
         },
       },
       {
@@ -59,6 +61,7 @@ export function CustomSlider(props: SeasonEpisodes) {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          infinite: true,
           dots: false,
         },
       },
