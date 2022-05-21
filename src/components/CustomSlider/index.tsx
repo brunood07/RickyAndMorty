@@ -31,8 +31,8 @@ export function CustomSlider(props: SeasonEpisodes) {
       {
         breakpoint: 1441,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 4,
+          slidesToScroll: 4,
           infinite: true,
           dots: true,
         },
@@ -49,8 +49,8 @@ export function CustomSlider(props: SeasonEpisodes) {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           initialSlide: 2,
         },
       },
@@ -59,6 +59,7 @@ export function CustomSlider(props: SeasonEpisodes) {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: false,
         },
       },
     ],

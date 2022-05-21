@@ -21,6 +21,51 @@ export const Container = styled.div`
   &:hover {
     border: 3px solid var(--blue);
   }
+
+  @media screen and (max-width: 375px) {
+    width: 250px;
+    height: 200px;
+
+    box-shadow: none;
+
+    text-align: center;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 315px;
+    height: 200px;
+
+    box-shadow: none;
+
+    text-align: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 400px;
+    height: 200px;
+
+    box-shadow: none;
+
+    text-align: center;
+  }
+
+  @media screen and (max-width: 1024px) {
+    width: 300px;
+    height: 200px;
+
+    box-shadow: none;
+
+    text-align: center;
+  }
+
+  @media screen and (max-width: 1441px) {
+    width: 300px;
+    height: 200px;
+
+    box-shadow: none;
+
+    text-align: center;
+  }
 `;
 
 export const Title = styled.p`
