@@ -22,7 +22,7 @@ export const Container = styled.div`
     border: 3px solid var(--blue);
   }
 
-  @media screen and (max-width: 360px) {
+  @media screen and (min-width: 200px) {
     width: 200px;
     height: 200px;
 
@@ -31,8 +31,26 @@ export const Container = styled.div`
     text-align: center;
   }
 
-  @media screen and (max-width: 1024px) {
-    width: 250px;
+  @media screen and (min-width: 360px) {
+    width: 200px;
+    height: 200px;
+
+    box-shadow: none;
+
+    text-align: center;
+  }
+
+  @media screen and (min-width: 461px) {
+    width: 275px;
+    height: 200px;
+
+    box-shadow: none;
+
+    text-align: center;
+  }
+
+  @media screen and (min-width: 769px) {
+    width: 300px;
     height: 200px;
 
     text-align: center;
@@ -40,7 +58,7 @@ export const Container = styled.div`
     box-shadow: gray 0px 7px 15px 0px;
   }
 
-  @media screen and (max-width: 1440px) {
+  @media screen and (min-width: 1025px) {
     width: 300px;
     height: 200px;
 
