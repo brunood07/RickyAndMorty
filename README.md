@@ -1,6 +1,6 @@
 # Rick and Morty
 
-The objective of the App is to study some React usage and API consuming.
+The objective of the App is to study some React usage, responsivity with styled components and API consuming.
 To accomplish it i used this Rick and Morty [API](https://rickandmortyapi.com).
 
 # LIBS
