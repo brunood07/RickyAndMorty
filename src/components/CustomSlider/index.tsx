@@ -66,16 +66,6 @@ export function CustomSlider(props: SeasonEpisodes) {
         },
       },
       {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1,
-          infinite: false,
-          dots: false,
-        },
-      },
-      {
         breakpoint: 360,
         settings: {
           slidesToShow: 1,
